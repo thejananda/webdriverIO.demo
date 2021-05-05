@@ -11,8 +11,8 @@ export default class Page {
     * @param path path of the sub page (e.g. /path/to/page.html)
     */
     open () {
-        return browser.url(`http://automationpractice.com/index.php`)
-                      .minimizeWindow();
+         browser.url(`http://automationpractice.com/index.php`)
+         browser.maximizeWindow();
     }
 
     internalSetValue(locator, value)  {

@@ -1,3 +1,6 @@
+
+const allure = require('@wdio/allure-reporter').default;
+
 exports.config = {
     //
     // ====================
@@ -172,7 +175,7 @@ exports.config = {
      * @param {Array.<Object>} capabilities list of capabilities details
      */
      onPrepare: function (config, capabilities) {
-        console.log('**** let\'s go ****');
+        console.log('**** let\'s go for demo ****');
       },
     /**
      * Gets executed before a worker process is spawned and can be used to initialise specific service
