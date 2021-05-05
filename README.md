@@ -1,1 +1,7 @@
-Note:please dont run test when you are behind your company proxy
+to install modules do 
+npm install
+to run test case that are inside specs folder run 
+npm test
+
+to generate report 
+npm run allure-report
