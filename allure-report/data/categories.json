@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "Timeout of 120000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/Users/tbm/git/ANZDemo/test/specs/example.e2e.js)",
+      "children" : [ {
+        "name" : "should login with valid credentials",
+        "uid" : "37a4ec4a5caaabe4",
+        "parentUid" : "a1ff797e92a8a9704ea66c9c1ba44bbc",
+        "status" : "broken",
+        "time" : {
+          "start" : 1620189520155,
+          "stop" : 1620189640193,
+          "duration" : 120038
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chrome" ]
+      } ],
+      "uid" : "a1ff797e92a8a9704ea66c9c1ba44bbc"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}

@@ -1,0 +1,54 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1620212624716' stop='1620212634913'>
+    <name>My Login application</name>
+    <title>My Login application</title>
+    <test-cases>
+        <test-case start='1620212624719' status='broken' stop='1620212629872'>
+            <name>Login to the application..</name>
+            <title>Login to the application..</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>element ("//*[@class="login"]") still not existing after 5000ms</message>
+                <stack-trace>Error: element ("//*[@class="login"]") still not existing after 5000ms
+                    at processTicksAndRejections (internal/process/task_queues.js:85:5)
+                    at LoginPage.internalWaitForExist (/Users/tbm/git/ANZDemo/test/pageobjects/page.js:54:36)
+                    at LoginPage.internalClick (/Users/tbm/git/ANZDemo/test/pageobjects/page.js:39:29)
+                    at LoginPage.openLoginForm (/Users/tbm/git/ANZDemo/test/pageobjects/login.page.js:82:14)
+                    at LoginPage.login (/Users/tbm/git/ANZDemo/test/pageobjects/login.page.js:97:14)
+                    at Context.&lt;anonymous> (/Users/tbm/git/ANZDemo/test/specs/anz.demo.js:33:19)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1620212629873' status='broken' stop='1620212634912'>
+            <name>Add product to cart...</name>
+            <title>Add product to cart...</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>element ("//*[@id="block_top_menu"]/ul/li[3]") still not existing after 5000ms</message>
+                <stack-trace>Error: element ("//*[@id="block_top_menu"]/ul/li[3]") still not existing after 5000ms
+                    at processTicksAndRejections (internal/process/task_queues.js:85:5)
+                    at Product.internalWaitForExist (/Users/tbm/git/ANZDemo/test/pageobjects/page.js:54:36)
+                    at Product.internalClick (/Users/tbm/git/ANZDemo/test/pageobjects/page.js:39:29)
+                    at Product.addProduct (/Users/tbm/git/ANZDemo/test/pageobjects/product.page.js:24:14)
+                    at Context.&lt;anonymous> (/Users/tbm/git/ANZDemo/test/specs/anz.demo.js:37:17)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

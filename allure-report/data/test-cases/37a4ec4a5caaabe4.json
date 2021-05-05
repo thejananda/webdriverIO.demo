@@ -1,0 +1,73 @@
+{
+  "uid" : "37a4ec4a5caaabe4",
+  "name" : "should login with valid credentials",
+  "fullName" : "My Login application.should login with valid credentials",
+  "historyId" : "d125d6fd504ae33dff5cc1500e6ff1a2",
+  "time" : {
+    "start" : 1620189520155,
+    "stop" : 1620189640193,
+    "duration" : 120038
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Timeout of 120000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/Users/tbm/git/ANZDemo/test/specs/example.e2e.js)",
+  "statusTrace" : "Error: Timeout of 120000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/Users/tbm/git/ANZDemo/test/specs/example.e2e.js)\n                    at Test.Runnable._timeoutError (/Users/tbm/git/ANZDemo/node_modules/mocha/lib/runnable.js:442:10)\n                    at Timeout.<anonymous> (/Users/tbm/git/ANZDemo/node_modules/mocha/lib/runnable.js:252:24)\n                    at listOnTimeout (internal/timers.js:531:17)\n                    at processTimers (internal/timers.js:475:7)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "My Login application"
+  }, {
+    "name" : "testClass",
+    "value" : "My Login application"
+  }, {
+    "name" : "testMethod",
+    "value" : "should login with valid credentials"
+  }, {
+    "name" : "package",
+    "value" : "My Login application"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "509784d61046cf05",
+      "status" : "failed",
+      "statusDetails" : "Created User name not matches..",
+      "time" : {
+        "start" : 1620187391617,
+        "stop" : 1620187422922,
+        "duration" : 31305
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "37a4ec4a5caaabe4.json",
+  "parameterValues" : [ "chrome" ]
+}

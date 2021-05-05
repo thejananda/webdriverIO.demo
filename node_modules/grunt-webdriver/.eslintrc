@@ -1,0 +1,18 @@
+{
+  "extends": "eslint:recommended",
+  "rules": {
+    "indent": [2, 4]
+  },
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "globals": {
+    "expect": true,
+    "describe": true,
+    "it": true,
+    "browser": true
+  },
+  "env": {
+    "node": true
+  }
+}

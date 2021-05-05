@@ -1,0 +1,27 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1620187391616' stop='1620187422924'>
+    <name>My Login application</name>
+    <title>My Login application</title>
+    <test-cases>
+        <test-case start='1620187391617' status='failed' stop='1620187422922'>
+            <name>should login with valid credentials</name>
+            <title>should login with valid credentials</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Created User name not matches..</message>
+                <stack-trace>AssertionError [ERR_ASSERTION]: Created User name not matches..
+                    at LoginPage.verifyUserCreated (/Users/tbm/git/ANZDemo/test/pageobjects/login.page.js:110:9)
+                    at Context.&lt;anonymous> (/Users/tbm/git/ANZDemo/test/specs/example.e2e.js:10:20)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,22 @@
+{
+  "d125d6fd504ae33dff5cc1500e6ff1a2" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "37a4ec4a5caaabe4",
+      "status" : "broken",
+      "statusDetails" : "Timeout of 120000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/Users/tbm/git/ANZDemo/test/specs/example.e2e.js)",
+      "time" : {
+        "start" : 1620189520155,
+        "stop" : 1620189640193,
+        "duration" : 120038
+      }
+    } ]
+  }
+}
