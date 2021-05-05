@@ -12,6 +12,7 @@ export default class Page {
     */
     open () {
         return browser.url(`http://automationpractice.com/index.php`)
+                      .minimizeWindow();
     }
 
     internalSetValue(locator, value)  {

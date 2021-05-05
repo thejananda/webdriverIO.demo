@@ -10,24 +10,27 @@ let product="Faded Short Sleeve T-shirts"
 
 describe('My Login application', () => {
 
-    // it('Create Account for user',  () => {
-    //      LoginPage.open();
-    //     //  browser.pause(10000)
-    //      LoginPage.openLoginForm()
-    //     //  LoginPage.login('theja2.2012@gmail.com','rama1@mb')
-    //     //  LoginPage.verifyUserCreated('rammanna','mb')
-    //     //  LoginPage.logOut()
-    //      LoginPage.createAccount("theja2.2012@gmail.com","Mr","anzcomp","anz","anz1@demo","4/12/1990","xccom","2nd ,CROSS,3rd Main,Layout","Bankok","Alabama","56009","9999999999","xxxx xxxx xxx")
-    //     // console.log("test")
-    // });
+    it('Open app',()=>{
+        LoginPage.open();
+    })
 
-    // it('Verify Account created sucessfully', ()=>{
-    //     LoginPage.verifyUserCreated('rammanna','mb')
-    // })
+    it('Create Account for user',  () => {
+        //  browser.pause(10000)
+         LoginPage.openLoginForm()
+        //  LoginPage.login('theja2.2012@gmail.com','rama1@mb')
+        //  LoginPage.verifyUserCreated('rammanna','mb')
+        //  LoginPage.logOut()
+         LoginPage.createAccount("theja2.2012@gmail.com","Mr","anzcomp","anz","anz1@demo","4/12/1990","xccom","2nd ,CROSS,3rd Main,Layout","Bankok","Alabama","56009","9999999999","xxxx xxxx xxx")
+        // console.log("test")
+    });
 
-    // it('logout of application ', ()=>{
-    //     LoginPage.logOut()
-    // })
+    it('Verify Account created sucessfully', ()=>{
+        LoginPage.verifyUserCreated('rammanna','mb')
+    })
+
+    it('logout of application ', ()=>{
+        LoginPage.logOut()
+    })
 
     it('Login to the application..', ()=>{
         LoginPage.login('theja2.2012@gmail.com','rama1@mb')
@@ -37,9 +40,9 @@ describe('My Login application', () => {
         Product.addProduct(product)
     })
 
-    // it('Checkout product...', ()=>{
-    //     Product.checkoutProduct(product)
-    // })
+    it('Checkout product...', ()=>{
+        Product.checkoutProduct(product)
+    })
 });
 
 

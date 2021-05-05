@@ -22,13 +22,18 @@ class Product extends Page {
 
         // this.internalSetValue('//*[@id="passwd"]',psw)
         this.internalClick('//*[@id="block_top_menu"]/ul/li[3]')
-        $(product).moveTo()
+        $(product).waitForExist({ timeout: 3000 });
+        $(product).scrollIntoView()
+        $(product).moveTo(0,0)
+        browser.pause(10000)
         $(addToCart).waitForExist({ timeout: 10000 });
         let isexist=$(addToCart).isDisplayed()
         if(!isexist){
            throw new Error('Add to cart button is not visible...')
         }
         this.internalClick(addToCart)
+        browser.pause(10000)
+        $(checkout).waitForExist({ timeout: 10000 });
         this.internalClick(checkout)
         browser.pause(10000)
     }
@@ -37,7 +42,7 @@ class Product extends Page {
         
         let checkout='//*[@class="cart_navigation clearfix"]//*[normalize-space(text())="Proceed to checkout"]'
         let termsNdCondition='//*[text()="Terms of service"]/following-sibling::p//input[@type="checkbox"]'
-        let product='//*[@id="cart_summary"]//*[@class="'+productName+'"]'
+        let product='//*[@id="cart_summary"]//*[text()="'+productName+'"]'
 
         //checkout from summary tab
         this.internalClick(checkout)
@@ -48,6 +53,7 @@ class Product extends Page {
         this.internalClick(checkout)
         
         //verify product in payment page
+        $(product).waitForExist({ timeout: 10000 });
         let productCheckout=$(product).getText()
         assert(productCheckout===productName,"checkout product dosent match with final product")
 
